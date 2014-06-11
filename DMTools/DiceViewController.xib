@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1024" defaultVersion="1072" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiceViewController">
+            <connections>
+                <outlet property="modifierText" destination="39" id="41"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="SEAutoFocusView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d4.png" id="4">
+                    <rect key="frame" x="20" y="6" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d6.png" id="5">
+                    <rect key="frame" x="20" y="56" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d8.png" id="6">
+                    <rect key="frame" x="20" y="106" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d10.png" id="7">
+                    <rect key="frame" x="20" y="156" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d12.png" id="8">
+                    <rect key="frame" x="20" y="206" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d20.png" id="9">
+                    <rect key="frame" x="20" y="256" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="600" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="10">
+                    <rect key="frame" x="120" y="21" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="601" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="11">
+                    <rect key="frame" x="121" y="69" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="602" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="12">
+                    <rect key="frame" x="121" y="119" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="603" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="13">
+                    <rect key="frame" x="121" y="169" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="604" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="14">
+                    <rect key="frame" x="121" y="219" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="605" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="15">
+                    <rect key="frame" x="121" y="269" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="605" contentMode="left" text="Modifier" lineBreakMode="tailTruncation" minimumFontSize="10" id="38">
+                    <rect key="frame" x="121" y="321" width="69" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" tag="700" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="16">
+                    <rect key="frame" x="220" y="17" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="32"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" tag="701" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="27">
+                    <rect key="frame" x="221" y="65" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="33"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" tag="702" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="28">
+                    <rect key="frame" x="221" y="115" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="34"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" tag="703" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="29">
+                    <rect key="frame" x="221" y="165" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="35"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" tag="704" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="30">
+                    <rect key="frame" x="221" y="215" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="36"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" tag="705" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="31">
+                    <rect key="frame" x="221" y="265" width="80" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="-" enabled="NO"/>
+                        <segment title="+"/>
+                    </segments>
+                    <connections>
+                        <action selector="diceCountChanged:" destination="-1" eventType="valueChanged" id="37"/>
+                    </connections>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="39">
+                    <rect key="frame" x="221" y="315" width="80" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation"/>
+                    <connections>
+                        <action selector="modifierChanged:" destination="-1" eventType="editingDidEnd" id="45"/>
+                        <outlet property="delegate" destination="-1" id="43"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="d10.png" width="50" height="50"/>
+        <image name="d12.png" width="50" height="50"/>
+        <image name="d20.png" width="50" height="50"/>
+        <image name="d4.png" width="50" height="50"/>
+        <image name="d6.png" width="50" height="50"/>
+        <image name="d8.png" width="50" height="50"/>
+    </resources>
+</document>

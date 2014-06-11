@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMToolsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Library name="DnD 4e">
+		<Info name="DnD 4e" player="false" avatar="avatar_01.png" race="Human" class="Fighter" level="1" HP="20/20" initiative="10+0"/>
+		<Group name="Abilities" type="value:modifier">
+			<Item name="Strength" value="10" modifier="0"/>
+			<Item name="Constitution" value="10" modifier="0"/>
+			<Item name="Dexterity" value="10" modifier="0"/>
+			<Item name="Intelligence" value="10" modifier="0"/>
+			<Item name="Wisdom" value="10" modifier="0"/>
+			<Item name="Charisma" value="10" modifier="0"/>
+		</Group>
+		<Group name="Attributes" type="value">
+			<Item name="AC" value="10" modifier="0" display="1"/>
+			<Item name="Fortitude" value="10" modifier="0" display="2"/>
+			<Item name="Reflex" value="10" modifier="0" display="3"/>
+			<Item name="Will" value="10" modifier="0" display="4"/>
+			<Item name="Speed" value="6" modifier="0"/>
+			<Item name="Passive Perception" value="10" modifier="0"/>
+			<Item name="Passive Insight" value="10" modifier="0"/>
+		</Group>
+		<Group name="Skills" type="value">
+			<Item name="Acrobatics" value="0" modifier="0"/>
+			<Item name="Arcana" value="0" modifier="0"/>
+			<Item name="Athletics" value="0" modifier="0"/>
+			<Item name="Bluff" value="0" modifier="0"/>
+			<Item name="Diplomacy" value="0" modifier="0"/>
+			<Item name="Dungeoneering" value="0" modifier="0"/>
+			<Item name="Endurance" value="0" modifier="0"/>
+			<Item name="Heal" value="0" modifier="0"/>
+			<Item name="History" value="0" modifier="0"/>
+			<Item name="Insight" value="0" modifier="0"/>
+			<Item name="Intimidate" value="0" modifier="0"/>
+			<Item name="Nature" value="0" modifier="0"/>
+			<Item name="Perception" value="0" modifier="0"/>
+			<Item name="Religion" value="0" modifier="0"/>
+			<Item name="Stealth" value="0" modifier="0"/>
+			<Item name="Streetwise" value="0" modifier="0"/>
+			<Item name="Thievery" value="0" modifier="0"/>
+		</Group>
+		<Group name="States" type="boolean">
+			<Item name="Marked" value="false" display="1"/>
+			<Item name="Dazed" value="false" display="2"/>
+			<Item name="Stunned" value="false" display="3"/>
+			<Item name="Slowed" value="false" display="4"/>
+			<Item name="Deafened" value="false" display="5"/>
+			<Item name="Blinded" value="false" display="6"/>
+			<Item name="Weakened" value="false" display="7"/>
+			<Item name="Immobilized" value="false" display="8"/>
+			<Item name="Charmed" value="false" display="9"/>
+			<Item name="Prone" value="false" display="10"/>
+			<Item name="Poisoned" value="false" display="11"/>
+		</Group>
+		<Group name="Powers" type="string">
+			<Item name="Basic" value="Melee, +1 vs AC, 1W+CHA, at-will"/>
+		</Group>
+		<Group name="Items" type="counter">
+			<Item name="Gold" value="100"/>
+			<Item name="Silver" value="0"/>
+			<Item name="Adventurer's Kit" value="1"/>
+		</Group>
+		<Group name="Miscellaneous" type="string">
+		</Group>
+	</Library>
+</DMToolsData>

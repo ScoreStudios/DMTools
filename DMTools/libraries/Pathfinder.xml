@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMToolsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Library name="Pathfinder">
+		<Info name="Pathfinder" player="false" avatar="avatar_01.png" race="Human" class="Fighter" level="1" HP="13/13" initiative="10+0"/>
+		<Group name="Defense" type="value">
+			<Item name="AC" value="14" modifier="0" display="1"/>
+			<Item name="Fortitude" value="3" modifier="0" display="1"/>
+			<Item name="Reflex" value="1" modifier="0" display="1"/>
+			<Item name="Will" value="5" modifier="0" display="1"/>
+			<Item name="Touch" value="10" modifier="0"/>
+			<Item name="Flat-footed" value="14" modifier="0"/>
+		</Group>
+		<Group name="Offense" type="value">
+			<Item name="Speed" value="30" modifier="0"/>
+		</Group>
+		<Group name="Statistics" type="value">
+			<Item name="Str" value="14" modifier="0"/>
+			<Item name="Dex" value="10" modifier="0"/>
+			<Item name="Con" value="12" modifier="0"/>
+			<Item name="Int" value="11" modifier="0"/>
+			<Item name="Wis" value="16" modifier="0"/>
+			<Item name="Cha" value="14" modifier="0"/>
+		</Group>
+		<Group name="States" type="boolean">
+			<Item name="Marked" value="false" display="1"/>
+			<Item name="Dazed" value="false" display="2"/>
+			<Item name="Stunned" value="false" display="3"/>
+			<Item name="Slowed" value="false" display="4"/>
+			<Item name="Deafened" value="false" display="5"/>
+			<Item name="Blinded" value="false" display="6"/>
+			<Item name="Weakened" value="false" display="7"/>
+			<Item name="Immobilized" value="false" display="8"/>
+			<Item name="Charmed" value="false" display="9"/>
+			<Item name="Prone" value="false" display="10"/>
+			<Item name="Poisoned" value="false" display="11"/>
+		</Group>
+		<Group name="Feats" type="string">
+			<Item name="New Item" value="Toughness"/>
+		</Group>
+		<Group name="Skills" type="value">
+			<Item name="Heal" value="7" modifier="0"/>
+			<Item name="Knowledge (Religion)" value="4" modifier="0"/>
+		</Group>
+		<Group name="Traits" type="string">
+			<Item name="Deft Dodger" value=""/>
+		</Group>
+		<Group name="Languages" type="string">
+			<Item name="Common" value=""/>
+			<Item name="Kelish" value=""/>
+		</Group>
+		<Group name="Gear" type="string">
+			<Item name="Waterskin" value=""/>
+			<Item name="Holy Symbol" value=""/>
+		</Group>
+		<Group name="Special Abilities" type="string">
+			<Item name="Dirty Fighter" value=""/>
+			<Item name="Weapon Focus" value=""/>
+		</Group>
+	</Library>
+</DMToolsData>

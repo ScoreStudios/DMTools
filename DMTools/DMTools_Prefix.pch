@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'DM Tools' target in the 'DM Tools' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import <AudioToolbox/AudioToolbox.h>
+	#import <MessageUI/MessageUI.h>
+	#import <DropboxSDK/DropboxSDK.h>
+	#import "UIDevice+IdiomDetection.h"
+	#import "NSString+XMLConvert.h"
+	#import "NSMutableArray+InstertSorted.h"
+#endif
+
+#define SCORE_APP_NAME	@"DM Tools"
+
+#define USE_WEBVIEW

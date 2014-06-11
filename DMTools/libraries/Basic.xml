@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMToolsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Library name="Basic">
+		<Info name="Basic" player="false" avatar="avatar_22.png" race="Human" class="Mage" level="1" HP="10/10" initiative="0+0"/>
+		<Group name="Attributes" type="value">
+			<Item name="AC" value="0" modifier="0" display="1"/>
+			<Item name="Fortitude" value="0" modifier="0" display="1"/>
+			<Item name="Reflex" value="0" modifier="0" display="1"/>
+			<Item name="Will" value="0" modifier="0" display="1"/>
+		</Group>
+		<Group name="States" type="boolean">
+			<Item name="Marked" value="false" display="1"/>
+			<Item name="Dazed" value="false" display="2"/>
+			<Item name="Stunned" value="false" display="3"/>
+			<Item name="Slowed" value="false" display="4"/>
+			<Item name="Deafened" value="false" display="5"/>
+			<Item name="Blinded" value="false" display="6"/>
+			<Item name="Weakened" value="false" display="7"/>
+			<Item name="Immobilized" value="false" display="8"/>
+			<Item name="Charmed" value="false" display="9"/>
+			<Item name="Prone" value="false" display="10"/>
+			<Item name="Poisoned" value="false" display="11"/>
+		</Group>
+	</Library>
+</DMToolsData>

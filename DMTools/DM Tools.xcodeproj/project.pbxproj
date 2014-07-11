@@ -1354,7 +1354,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",
+					"$(SRCROOT)/DM\\ Tools/frameworks",
+					"$(PROJECT_DIR)/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;
@@ -1369,7 +1370,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",
+					"$(SRCROOT)/DM\\ Tools/frameworks",
+					"$(PROJECT_DIR)/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;
@@ -1454,7 +1456,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",
+					"$(SRCROOT)/DM\\ Tools/frameworks",
+					"$(PROJECT_DIR)/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;

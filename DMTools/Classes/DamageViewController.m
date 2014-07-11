@@ -341,7 +341,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 			DMBoolean* boolean = [group.items objectAtIndex:statusIndex];
 			
 			button.tag = tag;
-			[button setImage:[statusIcons objectAtIndex:rowIndex * 2 + i]
+			[button setImage:[statusIcons objectAtIndex:boolean.display]
 					forState:UIControlStateNormal];
 			button.highlighted = boolean.value;
 			button.hidden = NO;

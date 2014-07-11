@@ -138,19 +138,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 		unit.dirty = YES;
 		
 		button.highlighted = boolean.value;
-		
-		CGRect rect = button.bounds;
-		rect.origin.x += rect.size.width * 0.5f;
-		rect.origin.y += rect.size.height * 0.5f;
-		rect = [_statesTableView convertRect:rect
-									fromView:button];
-		NSIndexPath* indexPath = [_statesTableView indexPathForRowAtPoint:rect.origin];
-		if( indexPath )
-			[_statesTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-									withRowAnimation:UITableViewRowAnimationNone];
-		else
-			[_statesTableView reloadSections:[NSIndexSet indexSetWithIndex:0]
-							withRowAnimation:UITableViewRowAnimationNone];
+        [_statesTableView reloadData];
 	}
 }
 
@@ -353,7 +341,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 			DMBoolean* boolean = [group.items objectAtIndex:statusIndex];
 			
 			button.tag = tag;
-			[button setImage:[statusIcons objectAtIndex:boolean.display]
+			[button setImage:[statusIcons objectAtIndex:rowIndex * 2 + i]
 					forState:UIControlStateNormal];
 			button.highlighted = boolean.value;
 			button.hidden = NO;

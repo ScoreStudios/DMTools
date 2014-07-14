@@ -310,6 +310,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 															owner:nil
 														  options:nil];
 		statusCell = [nibObjects objectAtIndex:0];
+        statusCell.selectionStyle = UITableViewCellSelectionStyleNone;
 		UIButton* button = [statusCell.buttons objectAtIndex:0];
 		[button addTarget:self
 				   action:@selector(selectState:)

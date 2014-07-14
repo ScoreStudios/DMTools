@@ -760,6 +760,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 																owner:nil
 															  options:nil];
 			infoCell = [nibObjects objectAtIndex:0];
+            infoCell.selectionStyle = UITableViewCellSelectionStyleNone;
 			[infoCell setInfoObject:_library ? _library : _unit];
 			infoCell.viewController = self;
 			infoCell.delegate = self;

@@ -138,19 +138,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 		unit.dirty = YES;
 		
 		button.highlighted = boolean.value;
-		
-		CGRect rect = button.bounds;
-		rect.origin.x += rect.size.width * 0.5f;
-		rect.origin.y += rect.size.height * 0.5f;
-		rect = [_statesTableView convertRect:rect
-									fromView:button];
-		NSIndexPath* indexPath = [_statesTableView indexPathForRowAtPoint:rect.origin];
-		if( indexPath )
-			[_statesTableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-									withRowAnimation:UITableViewRowAnimationNone];
-		else
-			[_statesTableView reloadSections:[NSIndexSet indexSetWithIndex:0]
-							withRowAnimation:UITableViewRowAnimationNone];
+        [_statesTableView reloadData];
 	}
 }
 
@@ -322,6 +310,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 															owner:nil
 														  options:nil];
 		statusCell = [nibObjects objectAtIndex:0];
+        statusCell.selectionStyle = UITableViewCellSelectionStyleNone;
 		UIButton* button = [statusCell.buttons objectAtIndex:0];
 		[button addTarget:self
 				   action:@selector(selectState:)

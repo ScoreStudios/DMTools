@@ -244,6 +244,7 @@
 	{
 		case SettingTypeBoolean:
 		{
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
 			UISwitch *onoff = [UISwitch new];
 			CGRect rect = onoff.frame;
 			rect.origin.x = contentRect.size.width - (rect.size.width + kControlPaddingX);

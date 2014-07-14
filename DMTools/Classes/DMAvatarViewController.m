@@ -259,6 +259,7 @@
 															owner:nil
 														  options:nil];
 		cell = [nibObjects objectAtIndex:0];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		for( NSUInteger i = 0 ; i < 4 ; ++i )
 		{
 			UIButton* button = [cell.avatars objectAtIndex:i];

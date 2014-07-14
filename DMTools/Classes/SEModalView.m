@@ -68,7 +68,6 @@
 	[self retain];
 	[self becomeFirstResponder];
 	
-	_modalWindow.hidden = YES;
 	_modalWindow.rootViewController.view = nil;
 
 	// make original window the key window

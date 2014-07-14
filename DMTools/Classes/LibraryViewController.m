@@ -413,6 +413,7 @@
 															owner:nil
 														  options:nil];
 		initCell = [nibObjects objectAtIndex:0];
+        initCell.selectionStyle = UITableViewCellSelectionStyleNone;
 	}
 	
 	DMUnit *unit = object;

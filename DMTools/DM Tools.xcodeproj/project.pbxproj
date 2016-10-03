@@ -162,7 +162,6 @@
 		C3F807011943D48700F78A43 /* SECollatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3504AB31553FE180054FCDD /* SECollatedViewController.m */; };
 		C3F807021943D48B00F78A43 /* SECollatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3504AB6155405200054FCDD /* SECollatedObject.m */; };
 		C3F807031943D49B00F78A43 /* SEWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A9CEF5121B3293000F1309 /* SEWebViewController.xib */; };
-		C3F807051943D87E00F78A43 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F807041943D87E00F78A43 /* DropboxSDK.framework */; };
 		C3FB5362133576670061903F /* DMUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB5360133576670061903F /* DMUnitViewController.m */; };
 		C3FB5369133719220061903F /* DMUnitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB5368133719210061903F /* DMUnitCell.m */; };
 		C3FB536B133738BF0061903F /* DMUnitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FB536A133738BC0061903F /* DMUnitCell.xib */; };
@@ -502,7 +501,6 @@
 		C3EE330614EB4ECF00662AE7 /* NSMutableString+DMToolsExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+DMToolsExport.m"; sourceTree = "<group>"; };
 		C3F384EC153B949D002ADB8D /* NSMutableArray+InstertSorted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+InstertSorted.h"; sourceTree = "<group>"; };
 		C3F384ED153B949D002ADB8D /* NSMutableArray+InstertSorted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+InstertSorted.m"; sourceTree = "<group>"; };
-		C3F807041943D87E00F78A43 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = frameworks/DropboxSDK.framework; sourceTree = "<group>"; };
 		C3FB535F133576670061903F /* DMUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUnitViewController.h; sourceTree = "<group>"; };
 		C3FB5360133576670061903F /* DMUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUnitViewController.m; sourceTree = "<group>"; };
 		C3FB5367133719210061903F /* DMUnitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUnitCell.h; sourceTree = "<group>"; };
@@ -548,7 +546,6 @@
 				E4FA5F0111C4B82F00C8D113 /* MessageUI.framework in Frameworks */,
 				C320DE8611C5915600323570 /* AudioToolbox.framework in Frameworks */,
 				C3ACB533124C1CBE006DF6A6 /* QuartzCore.framework in Frameworks */,
-				C3F807051943D87E00F78A43 /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +602,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C3F807041943D87E00F78A43 /* DropboxSDK.framework */,
 				C320DE8511C5915600323570 /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -1142,6 +1138,11 @@
 				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Score Studios";
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = BCQNH4223D;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DM Tools" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1352,6 +1353,7 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BCQNH4223D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",
@@ -1367,6 +1369,7 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BCQNH4223D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",
@@ -1397,7 +1400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -1418,7 +1421,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1442,7 +1445,7 @@
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PROFILING_CODE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1452,6 +1455,7 @@
 		C305BF14151ACFE6003F28BC /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BCQNH4223D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hamouras/Desktop/DM\\ Tools/frameworks",

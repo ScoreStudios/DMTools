@@ -28,7 +28,7 @@
 	 [unit.avatarName stringByAddingXMLEscapeChars],
 	 [unit.race stringByAddingXMLEscapeChars],
 	 [unit.charClass stringByAddingXMLEscapeChars],
-	 unit.level,
+	 (int)unit.level,
 	 [unit.HP toShortString],
 	 [unit.initiative toShortString]];
 }
@@ -78,7 +78,7 @@
 					 boolean.value ? @"true" : @"false"];
 					if( boolean.display )
 						[self appendFormat:@" display=\"%d\"/>\n",
-						 boolean.display];
+						 (int)boolean.display];
 					else
 						[self appendString:@"/>\n"];
 				}
@@ -95,10 +95,10 @@
 					[self appendFormat:@"%@\t<Item name=\"%@\" value=\"%d\"",
 					 tab,
 					 [key stringByAddingXMLEscapeChars],
-					 number.value];
+					 (int)number.value];
 					if( number.display )
 						[self appendFormat:@" display=\"%d\"/>\n",
-						 number.display];
+						 (int)number.display];
 					else
 						[self appendString:@"/>\n"];
 				}
@@ -119,11 +119,11 @@
 					[self appendFormat:@"%@\t<Item name=\"%@\" value=\"%d\" modifier=\"%d\"",
 					 tab,
 					 [key stringByAddingXMLEscapeChars],
-					 number.value,
-					 number.modifier];
+					 (int)number.value,
+					 (int)number.modifier];
 					if( number.display )
 						[self appendFormat:@" display=\"%d\"/>\n",
-						 number.display];
+						 (int)number.display];
 					else
 						[self appendString:@"/>\n"];
 				}

@@ -280,7 +280,7 @@
 			textField.text = setting.stringValue;
 			textField.borderStyle = UITextBorderStyleRoundedRect;
 			textField.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth;
-			textField.textAlignment = UITextAlignmentLeft;
+			textField.textAlignment = NSTextAlignmentLeft;
 			// set text input params
 			textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 			textField.autocorrectionType = UITextAutocorrectionTypeNo;
@@ -301,7 +301,6 @@
 			segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth;
 			segmentedControl.frame = rect;
 			segmentedControl.selectedSegmentIndex = setting.integerValue;
-			segmentedControl.segmentedControlStyle = UISegmentedControlStyleBordered;
 			// set event handler
 			[segmentedControl addTarget:self
 								 action:@selector(controlChangedEvent:)

@@ -42,7 +42,7 @@
 	[button release];
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -16,7 +16,6 @@
 
 @interface DMSettings : SESettings
 {
-	NSUInteger	_dbGroupIndex;
 }
 
 + (DMSettings *) settings;
@@ -28,7 +27,5 @@
 + (BOOL) autoMergeLibraries;
 
 - (void) save:(BOOL)synchronize;
-
-- (NSUInteger) dropboxGroupIndex;
 
 @end

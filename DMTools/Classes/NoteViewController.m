@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
 	
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 	if (currentNote != nil)
 	{
 		titlefield.text = currentNote.title;

@@ -218,7 +218,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 	
 	self.navigationItem.title = _unit.name;
 	
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 	self.tableView.allowsSelectionDuringEditing = YES;
 	
 	_openEye = [[UIImage imageNamed:@"visible_on.png"] retain];
@@ -514,7 +514,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 	while( ![self editView:pickerEditView
 			  isValidTitle:title] )
 	{
-		title = [baseTitle stringByAppendingFormat:@" %d", counter++];
+		title = [baseTitle stringByAppendingFormat:@" %d", (int)counter++];
 	}
 	
 	if( rowIndex == 0 )
@@ -525,7 +525,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 		
 		// only allow to change type when there are no items in the group
 		if( !group.items.count )
-			group.type = selectedIndex;
+			group.type = (DMGroupType)selectedIndex;
 	}
 	else
 	{
@@ -792,7 +792,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 			contentRect.size.height = kNotesRowHeight - kControlPadding * 2.0f;
 			
 			UITextView* textView = [[UITextView alloc] initWithFrame:contentRect];
-			textView.textAlignment = UITextAlignmentLeft;
+			textView.textAlignment = NSTextAlignmentLeft;
 			// set text input params
 			textView.autocapitalizationType = UITextAutocapitalizationTypeNone;
 			textView.autocorrectionType = UITextAutocorrectionTypeDefault;
@@ -882,7 +882,7 @@ static inline NSUInteger RowIndexFromTag( NSUInteger tag )
 							
 						case kFieldLevel:	// level
 							textLabel = @"Level";
-							detailTextLabel = [NSString stringWithFormat:@"%d", _unit.level];
+							detailTextLabel = [NSString stringWithFormat:@"%d", (int)_unit.level];
 							break;
 							
 						case kFieldHP:	// HP

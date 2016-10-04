@@ -5,9 +5,8 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
-	#import <AudioToolbox/AudioToolbox.h>
+	#import <AVFoundation/AVAudioSession.h>
 	#import <MessageUI/MessageUI.h>
-	#import <DropboxSDK/DropboxSDK.h>
 	#import "UIDevice+IdiomDetection.h"
 	#import "NSString+XMLConvert.h"
 	#import "NSMutableArray+InstertSorted.h"

@@ -36,7 +36,7 @@
 	UIBarButtonItem *createButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
 																				  target:self
 																				  action:@selector(createNote:)];
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 	self.navigationController.toolbarHidden = NO;
 	self.toolbarItems = [NSArray arrayWithObject:createButton];
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;

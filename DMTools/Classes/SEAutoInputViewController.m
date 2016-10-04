@@ -163,7 +163,7 @@
 	keyboardVisible = YES;
 	
 	NSDictionary* info = [notification userInfo];
-	NSValue* value = [info objectForKey:UIKeyboardBoundsUserInfoKey];
+	NSValue* value = [info objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGSize keyboardSize = [value CGRectValue].size;
 	keyboardHeight = keyboardSize.height;
 	

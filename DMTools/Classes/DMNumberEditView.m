@@ -36,7 +36,7 @@
 	[numberEditView.picker selectRow:counter >= 0 ? 0 : 1
 						 inComponent:0
 							animated:NO];
-	counter = abs( counter );
+	counter = labs( counter );
 	[numberEditView.picker selectRow:(counter / 1000)
 						 inComponent:1
 							animated:NO];
@@ -305,7 +305,7 @@
 	if( _mode == ModeCounter )
 	{
 		if( component )
-			return [NSString stringWithFormat:@"%d", row];
+			return [NSString stringWithFormat:@"%d", (int)row];
 		else
 			return row ? @"-" : @"+";
 	}
@@ -322,7 +322,7 @@
 				offset = (_modeSelector.selectedSegmentIndex ? kValueModMinRange : kValueMinRange);
 		}
 		
-		return [NSString stringWithFormat:@"%d", offset + row];
+		return [NSString stringWithFormat:@"%d", (int)(offset + row)];
 	}
 }
 

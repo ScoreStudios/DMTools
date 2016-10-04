@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	if ([[UIDevice currentDevice] isIPad])
-		self.contentSizeForViewInPopover = CGSizeMake(320.0f, 480.0f);
+		self.preferredContentSize = CGSizeMake(320.0f, 480.0f);
 	[self setToolbarItems:_toolbar.items
 				 animated:YES];
 	self.navigationController.toolbarHidden = NO;
@@ -61,6 +61,8 @@
 			break;
 		case UIDeviceOrientationPortraitUpsideDown:
 			[self.webView stringByEvaluatingJavaScriptFromString:@"window.__defineGetter__('orientation',function(){return 180;});window.onorientationchange();"];
+			break;
+		default:
 			break;
     }
 }
@@ -149,10 +151,10 @@
 {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 
-	UIButton *stopButton = [self.toolbarItems objectAtIndex:3];
+	UIBarButtonItem *stopButton = [self.toolbarItems objectAtIndex:3];
 	stopButton.enabled = YES;
 	
-	UIButton *refreshButton = [self.toolbarItems objectAtIndex:4];
+	UIBarButtonItem *refreshButton = [self.toolbarItems objectAtIndex:4];
 	refreshButton.enabled = YES;
 }
 
@@ -160,13 +162,13 @@
 {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 	
-	UIButton *backButton = [self.toolbarItems objectAtIndex:0];
+	UIBarButtonItem *backButton = [self.toolbarItems objectAtIndex:0];
 	backButton.enabled = self.webView.canGoBack;
 
-	UIButton *forwardButton = [self.toolbarItems objectAtIndex:1];
+	UIBarButtonItem *forwardButton = [self.toolbarItems objectAtIndex:1];
 	forwardButton.enabled = self.webView.canGoForward;
 
-	UIButton *stopButton = [self.toolbarItems objectAtIndex:3];
+	UIBarButtonItem *stopButton = [self.toolbarItems objectAtIndex:3];
 	stopButton.enabled = NO;
 }
 
@@ -174,13 +176,13 @@
 {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 	
-	UIButton *backButton = [self.toolbarItems objectAtIndex:0];
+	UIBarButtonItem *backButton = [self.toolbarItems objectAtIndex:0];
 	backButton.enabled = self.webView.canGoBack;
 	
-	UIButton *forwardButton = [self.toolbarItems objectAtIndex:1];
+	UIBarButtonItem *forwardButton = [self.toolbarItems objectAtIndex:1];
 	forwardButton.enabled = self.webView.canGoForward;
 	
-	UIButton *stopButton = [self.toolbarItems objectAtIndex:3];
+	UIBarButtonItem *stopButton = [self.toolbarItems objectAtIndex:3];
 	stopButton.enabled = NO;
 }
 

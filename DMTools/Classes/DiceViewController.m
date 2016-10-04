@@ -27,7 +27,7 @@
 			currentRoll = [roll retain];
 			for (NSInteger i = 0 ; i < DiceType_Max ; ++i)
 			{
-				diceArray[i] = [currentRoll dice:i];
+				diceArray[i] = [currentRoll dice:(DiceType)i];
 			}
 		}
 	}
@@ -42,15 +42,15 @@
 	for (NSInteger i = 0 ; i < DiceType_Max ; ++i)
 	{
 		UILabel *diceLabel = (UILabel *) [self.view viewWithTag:(600 + i)];
-		diceLabel.text = [NSString stringWithFormat:@"%dd%d", diceArray[i], [RollEntry diceValue:i]];
+		diceLabel.text = [NSString stringWithFormat:@"%dd%d", (int)diceArray[i], (int)[RollEntry diceValue:(DiceType)i]];
 		UISegmentedControl *diceControl = (UISegmentedControl *) [self.view viewWithTag:(700 + i)];
 		[diceControl setEnabled:diceArray[i] > 0
 			  forSegmentAtIndex:0];
 	}
 	
-	modifierText.text = [NSString stringWithFormat:@"%d", currentRoll.modifier];
+	modifierText.text = [NSString stringWithFormat:@"%d", (int)currentRoll.modifier];
 
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 
 	self.navigationItem.title = [RollEntry stringForDice:diceArray
 											withModifier:currentRoll.modifier];
@@ -65,7 +65,7 @@
 	[diceControl setEnabled:diceArray[dice] > 0
 		  forSegmentAtIndex:0];
 	UILabel *diceLabel = (UILabel *) [self.view viewWithTag:600 + dice]; 
-	diceLabel.text = [NSString stringWithFormat:@"%dd%d", diceArray[dice], [RollEntry diceValue:dice]];
+	diceLabel.text = [NSString stringWithFormat:@"%dd%d", (int)diceArray[dice], (int)[RollEntry diceValue:(DiceType)dice]];
 	
 	self.navigationItem.title = [RollEntry stringForDice:diceArray
 											withModifier:[modifierText.text integerValue]];
@@ -85,7 +85,7 @@
 	{
 		for (NSInteger i = 0 ; i < DiceType_Max ; ++i)
 		{
-			[currentRoll setDice:i
+			[currentRoll setDice:(DiceType)i
 						 toValue:diceArray[i]];
 		}
 		currentRoll.modifier = [modifierText.text integerValue];
@@ -98,7 +98,7 @@
 		currentRoll = [[RollEntry alloc] init];
 		for (NSInteger i = 0 ; i < DiceType_Max ; ++i)
 		{
-			[currentRoll setDice:i
+			[currentRoll setDice:(DiceType)i
 						 toValue:diceArray[i]];
 		}
 		currentRoll.modifier = [modifierText.text integerValue];

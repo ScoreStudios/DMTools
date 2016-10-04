@@ -129,7 +129,7 @@
 {
     [super viewDidLoad];
 
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 
 	_selectedIcon = [[UIImage imageNamed:@"checkbox_2.png"] retain];
 	_imageNames = [NSMutableArray new];
@@ -137,7 +137,7 @@
 
 	_enumerate = YES;
 	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Clear"
-																			   style:UIBarButtonItemStyleBordered
+																			   style:UIBarButtonItemStylePlain
 																			  target:self
 																			  action:@selector(clearSelection:)] autorelease];
 	dispatch_queue_t queue = dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0 );

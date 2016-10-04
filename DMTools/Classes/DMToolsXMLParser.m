@@ -560,12 +560,12 @@ didStartElement:(NSString *)elementName
 - (void) parser:(NSXMLParser *)parser
 parseErrorOccurred:(NSError *)parseError
 {
-	NSLog(@"Error %d, Description: %@, %@, Line: %i, Column: %i",
-		  [parseError code],
+	NSLog(@"Error %ld, Description: %@, %@, Line: %i, Column: %i",
+		  (long)[parseError code],
 		  [parseError localizedDescription],
 		  [[parser parserError] localizedDescription],
-		  [parser lineNumber],
-		  [parser columnNumber]);
+		  (int)[parser lineNumber],
+		  (int)[parser columnNumber]);
 	
 	if( _delegate
 		&& [_delegate respondsToSelector:@selector(parser:parseErrorOccurred:)] )

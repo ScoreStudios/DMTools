@@ -7,6 +7,7 @@
 //
 
 #import "DMSettings.h"
+#import "DMSettingsViewController.h"
 
 DMSettings *sSettings = nil;
 
@@ -204,11 +205,6 @@ DMSettings *sSettings = nil;
 	
 	if (synchronize)
 		[userDefaults synchronize];
-}
-
-- (NSUInteger) dropboxGroupIndex
-{
-	return _dbGroupIndex;
 }
 
 @end

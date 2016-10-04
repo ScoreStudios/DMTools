@@ -23,4 +23,12 @@
 	} _status;
 }
 
+- (void) exportToMail:(NSIndexPath*)indexPath;
+- (void) importFromITunes:(NSIndexPath*)indexPath;
+- (void) exportToITunes:(NSIndexPath*)indexPath;
+- (void) rateDMTools:(NSIndexPath*)indexPath;
+- (void) linkToScore:(NSIndexPath*)indexPath;
+- (void) linkToForums:(NSIndexPath*)indexPath;
+- (void) mailToScore:(NSIndexPath*)indexPath;
+
 @end

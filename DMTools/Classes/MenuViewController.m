@@ -52,7 +52,7 @@
 {
     [super viewDidLoad];
 	
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 	
 	// setup buttons
 	UIBarButtonItem *createButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
@@ -105,7 +105,7 @@
 	NSUInteger counter = 1;
 	while( [libraries objectForKey:newName] )
 	{
-		newName = [prefix stringByAppendingFormat:@" %d", counter++];
+		newName = [prefix stringByAppendingFormat:@" %d", (int)counter++];
 	}
 	DMLibrary* library = [[DMLibrary alloc] initWithName:newName];
 	[self addLibrary:library];

@@ -93,19 +93,21 @@
 	return [tempPath stringByAppendingPathComponent:identifier];
 }
 
-void interruptionListener(void *inClientData, UInt32 inInterruptionState)
+- (void) audioSessionDidChangeInterruptionType:(NSNotification*)notification
 {
-	(void)inClientData;
+	AVAudioSessionInterruptionType interruptionType = [[[notification userInfo] objectForKey:AVAudioSessionInterruptionTypeKey] unsignedIntegerValue];
 	
-	if (inInterruptionState == kAudioSessionBeginInterruption)
+	if (interruptionType == AVAudioSessionInterruptionTypeBegan)
 	{
 		// disable audio session
-		AudioSessionSetActive(false);
+		[[AVAudioSession sharedInstance] setActive:NO
+											 error:nil];
 	}
-	else if (inInterruptionState == kAudioSessionEndInterruption)
+	else if (interruptionType == AVAudioSessionInterruptionTypeEnded)
 	{
 		// enable audio session
-		AudioSessionSetActive(true);
+		[[AVAudioSession sharedInstance] setActive:YES
+											 error:nil];
 	}
 }
 
@@ -191,17 +193,16 @@ void interruptionListener(void *inClientData, UInt32 inInterruptionState)
 								 error:NULL];
 	
 	// create & enable audio session
-	AudioSessionInitialize(NULL, kCFRunLoopDefaultMode, interruptionListener, self);
-	UInt32 sessionCategory = kAudioSessionCategory_AmbientSound;
-	AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(UInt32), &sessionCategory);
-	AudioSessionSetActive(true);
-
- 	DBSession* session = [[DBSession alloc] initWithAppKey:@"v6vdl8dt5b7126h"
-												 appSecret:@"5vzbbrrx9ix6agi"
-													  root:kDBRootAppFolder];
-	session.delegate = self;
-	[DBSession setSharedSession:session];
-	[session release];
+	AVAudioSession* AudioSession = [AVAudioSession sharedInstance];
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(audioSessionDidChangeInterruptionType:)
+												 name:AVAudioSessionInterruptionNotification
+											   object:AudioSession];
+	[AudioSession setCategory:AVAudioSessionCategoryAmbient
+						error:nil];
+	[AudioSession setActive:YES
+					  error:nil];
+	
 	
 	// to disable the gresture we need to manually set the rootViewController of the window
 	// after we set presentsWithGesture to NO, otherwise it doesn't work
@@ -227,27 +228,18 @@ void interruptionListener(void *inClientData, UInt32 inInterruptionState)
 	return YES;
 }
 
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-	if( [[DBSession sharedSession] handleOpenURL:url] )
-	{
-		[self.settingsViewController updateDropboxButtons];
-		return YES;
-	}
-	
-	return NO;
-}
-
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
 	// enable audio session
-	AudioSessionSetActive(true);
+	[[AVAudioSession sharedInstance] setActive:YES
+										 error:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// disable audio session
-	AudioSessionSetActive(false);
+	[[AVAudioSession sharedInstance] setActive:NO
+										 error:nil];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -286,20 +278,6 @@ void interruptionListener(void *inClientData, UInt32 inInterruptionState)
 	[DMDataManager clearCache];
 }
 
-#pragma mark -
-#pragma mark DBSessionDelegate methods
-
-- (void)sessionDidReceiveAuthorizationFailure:(DBSession*)session userId:(NSString *)userId
-{
-	_relinkUserId = [userId retain];
-	[[[[UIAlertView alloc] initWithTitle:@"Dropbox Session Ended"
-								 message:@"Do you want to relink?"
-								delegate:self
-					   cancelButtonTitle:@"Cancel"
-					   otherButtonTitles:@"Relink", nil]
-	  autorelease]
-	 show];
-}
 
 #pragma mark -
 #pragma mark MFMailComposeViewControllerDelegate methods
@@ -308,21 +286,9 @@ void interruptionListener(void *inClientData, UInt32 inInterruptionState)
           didFinishWithResult:(MFMailComposeResult)result 
                         error:(NSError*)error;
 {
-	[controller dismissModalViewControllerAnimated:YES];
+	[controller dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-#pragma mark -
-#pragma mark UIAlertViewDelegate methods
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)index
-{
-	if (index != alertView.cancelButtonIndex)
-		[[DBSession sharedSession] linkUserId:_relinkUserId];
-	
-	[_relinkUserId release];
-	_relinkUserId = nil;
-}
 
 #pragma mark UITabBarControllerDelegate
 /*
@@ -350,7 +316,6 @@ void interruptionListener(void *inClientData, UInt32 inInterruptionState)
 	[_tabBarController release];
 	[_rootViewController release];
 	[_window release];
-	[_relinkUserId release];
     [super dealloc];
 }
 

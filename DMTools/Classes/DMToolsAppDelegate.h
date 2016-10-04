@@ -16,13 +16,12 @@
 @class DMSettingsViewController;
 @class SEWebViewController;
 
-@interface DMToolsAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, DBSessionDelegate, MFMailComposeViewControllerDelegate>
+@interface DMToolsAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate, MFMailComposeViewControllerDelegate>
 {
     UIWindow*					_window;
 	UIViewController*			_rootViewController;
 	UISplitViewController*		_splitViewController;
 	UITabBarController*			_tabBarController;
-	NSString*					_relinkUserId;
 	
 	MenuViewController*			_menuViewController;
 	LibraryViewController*		_libraryViewController;

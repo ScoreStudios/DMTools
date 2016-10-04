@@ -37,14 +37,14 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 		const NSInteger diceValue = sDiceValue[i];
 		text = [text stringByAppendingFormat:
 				first ? @"%dd%d" : @" + %dd%d",
-				diceCount, diceValue];
+				(int)diceCount, (int)diceValue];
 		first = NO;
 	}
 	if (modifier)
 	{
 		text = [text stringByAppendingFormat:
 				modifier < 0 ? @" - %d" : (first ? @"%d" : @" + %d"),
-				modifier < 0 ? -modifier : modifier];
+				(int)(modifier < 0 ? -modifier : modifier)];
 	}
 	return text;
 }
@@ -59,13 +59,13 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 			_initiative = [decoder decodeBoolForKey:@"KInitiative"];
 			if( !_initiative )
 			{
-				_diceArray[DiceType_D4] = [decoder decodeIntForKey:@"kD4"];
-				_diceArray[DiceType_D6] = [decoder decodeIntForKey:@"kD6"];
-				_diceArray[DiceType_D8] = [decoder decodeIntForKey:@"kD8"];
-				_diceArray[DiceType_D10] = [decoder decodeIntForKey:@"kD10"];
-				_diceArray[DiceType_D12] = [decoder decodeIntForKey:@"kD12"];
-				_diceArray[DiceType_D20] = [decoder decodeIntForKey:@"kD20"];
-				_modifier = [decoder decodeIntForKey:@"kModifier"];
+				_diceArray[DiceType_D4] = [decoder decodeIntegerForKey:@"kD4"];
+				_diceArray[DiceType_D6] = [decoder decodeIntegerForKey:@"kD6"];
+				_diceArray[DiceType_D8] = [decoder decodeIntegerForKey:@"kD8"];
+				_diceArray[DiceType_D10] = [decoder decodeIntegerForKey:@"kD10"];
+				_diceArray[DiceType_D12] = [decoder decodeIntegerForKey:@"kD12"];
+				_diceArray[DiceType_D20] = [decoder decodeIntegerForKey:@"kD20"];
+				_modifier = [decoder decodeIntegerForKey:@"kModifier"];
 			}
 		}
 	}
@@ -82,20 +82,20 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 					 forKey:@"KInitiative"];
 	else 
 	{
-		[encoder encodeInt:_diceArray[DiceType_D4]
-					forKey:@"kD4"];
-		[encoder encodeInt:_diceArray[DiceType_D6]
-					forKey:@"kD6"];
-		[encoder encodeInt:_diceArray[DiceType_D8]
-					forKey:@"kD8"];
-		[encoder encodeInt:_diceArray[DiceType_D10]
-					forKey:@"kD10"];
-		[encoder encodeInt:_diceArray[DiceType_D12]
-					forKey:@"kD12"];
-		[encoder encodeInt:_diceArray[DiceType_D20]
-					forKey:@"kD20"];
-		[encoder encodeInt:_modifier
-					forKey:@"kModifier"];
+		[encoder encodeInteger:_diceArray[DiceType_D4]
+						forKey:@"kD4"];
+		[encoder encodeInteger:_diceArray[DiceType_D6]
+						forKey:@"kD6"];
+		[encoder encodeInteger:_diceArray[DiceType_D8]
+						forKey:@"kD8"];
+		[encoder encodeInteger:_diceArray[DiceType_D10]
+						forKey:@"kD10"];
+		[encoder encodeInteger:_diceArray[DiceType_D12]
+						forKey:@"kD12"];
+		[encoder encodeInteger:_diceArray[DiceType_D20]
+						forKey:@"kD20"];
+		[encoder encodeInteger:_modifier
+						forKey:@"kModifier"];
 	}
 }
 
@@ -167,8 +167,8 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 		const NSInteger roll2 = rand() % 10;
 		return [NSString stringWithFormat:
 				@"(%d, %d) = %d",
-				roll1, roll2,
-				(roll1 || roll2) ? (roll1 * 10 + roll2) : 100];
+				(int)roll1, (int)roll2,
+				(int)((roll1 || roll2) ? (roll1 * 10 + roll2) : 100)];
 	}
 	else
 	{
@@ -191,7 +191,7 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 				const NSInteger curValue = rand() % diceValue + 1;
 				text = [text stringByAppendingFormat:
 						firstNum ? @"%d" : @" + %d",
-						curValue];
+						(int)curValue];
 				value += curValue;
 				firstNum = NO;
 			}
@@ -201,10 +201,10 @@ static const NSInteger sDiceValue[DiceType_Max] = { 4, 6, 8, 10, 12, 20 };
 		{
 			text = [text stringByAppendingFormat:
 					_modifier < 0 ? @" - %d" : (first ? @"%d" : @" + %d"),
-					_modifier < 0 ? -_modifier : _modifier];
+					(int)(_modifier < 0 ? -_modifier : _modifier)];
 			value += _modifier;
 		}
-		text = [text stringByAppendingFormat:@" = %d", value];
+		text = [text stringByAppendingFormat:@" = %d", (int)value];
 		return text;
 	}
 }

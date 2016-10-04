@@ -45,12 +45,12 @@
 
 - (NSString *) toString
 {
-	return [NSString stringWithFormat:@"%d / %d", _value, _maxValue];
+	return [NSString stringWithFormat:@"%d / %d", (int)_value, (int)_maxValue];
 }
 
 - (NSString *) toShortString
 {
-	return [NSString stringWithFormat:@"%d/%d", _value, _maxValue];
+	return [NSString stringWithFormat:@"%d/%d", (int)_value, (int)_maxValue];
 }
 
 @end

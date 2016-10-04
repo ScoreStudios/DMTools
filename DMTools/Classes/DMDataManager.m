@@ -917,7 +917,7 @@ static NSMutableDictionary* sAvatars = nil;
 		dispatch_async( dispatch_get_main_queue(), ^{
 			
 			NSString* msg = [NSString stringWithFormat:@"Successfully imported\n%d images, %d libraries,\nand %d encounters from iTunes",
-							 imgCount, libCount, encCount];
+							 (unsigned int)imgCount, (unsigned int)libCount, (unsigned int)encCount];
 			UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Import"
 															message:msg
 														   delegate:nil

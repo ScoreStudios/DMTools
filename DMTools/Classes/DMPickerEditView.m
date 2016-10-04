@@ -185,7 +185,7 @@
 				label = [[[UILabel alloc] initWithFrame:frame] autorelease];
 				label.backgroundColor = [UIColor clearColor];
 				label.font = [UIFont boldSystemFontOfSize:[UIFont labelFontSize]];
-				label.textAlignment = UITextAlignmentCenter;
+				label.textAlignment = NSTextAlignmentCenter;
 			}
 			
 			label.text = [_items objectAtIndex:row];

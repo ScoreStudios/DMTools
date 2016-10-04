@@ -69,7 +69,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 		unit.dirty = YES;
 	}
 	
-	[DamageViewController setLastHP:abs(damage)];
+	[DamageViewController setLastHP:labs(damage)];
 }
 
 - (void) applyModifiers
@@ -159,9 +159,9 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 {
     [super viewDidLoad];
 
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 	
-	_HP.text = [NSString stringWithFormat:@"%d", lastHP];
+	_HP.text = [NSString stringWithFormat:@"%d", (int)lastHP];
 
 	NSUInteger numAttribs = 0;
 	const NSUInteger maxAttribs = _attribValues.count;
@@ -210,7 +210,7 @@ static inline NSUInteger StatusIndexFromTag( NSUInteger tag )
 								UITextField* attribValue = [_attribValues objectAtIndex:numAttribs];
 								attribLabel.text = ( labelName.length <= 3 ) ? labelName : [labelName substringToIndex:3];
 								attribLabel.hidden = NO;
-								attribValue.text = [NSString stringWithFormat:@"%d", number.modifier];
+								attribValue.text = [NSString stringWithFormat:@"%d", (int)number.modifier];
 								attribValue.hidden = NO;
 								attribValue.tag = CreateCellTag( groupIndex, index );
 

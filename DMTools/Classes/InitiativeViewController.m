@@ -71,7 +71,7 @@
 						animated:YES];
 	navi.delegate = self;
 	navi.navigationBar.topItem.title = title;
-	navi.contentSizeForViewInPopover = viewController.contentSizeForViewInPopover;
+	navi.preferredContentSize = viewController.preferredContentSize;
 	self.toolbarPopoverController = [[[UIPopoverController alloc] initWithContentViewController:navi] autorelease];
 	_toolbarPopoverController.delegate = self;
 	// use the split controller's second view to avoid bug with popover's size for scrollable views
@@ -163,7 +163,7 @@
 	// check init array for unique monster
 	while ([self unitExists:name])
 	{
-		name = [NSString stringWithFormat:@"%@ %d", unit.name, ++instance];
+		name = [NSString stringWithFormat:@"%@ %d", unit.name, (int)++instance];
 	}
 		
 	DMUnit *newUnit = [unit copy];
@@ -204,7 +204,7 @@
 		--_curRound;
 		DMEncounter* encounter = [DMDataManager currentEncounter];
 		// update view's name
-		self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]", _curRound];
+		self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]", (int)_curRound];
 	}
 	_curInitiativeCount = 1;
 	
@@ -240,7 +240,7 @@
 			++_curRound;
 			DMEncounter* encounter = [DMDataManager currentEncounter];
 			// update view's name
-			self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]", _curRound];
+			self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]",(int) _curRound];
 		}
 	}
 	_curInitiativeCount = 1;
@@ -486,7 +486,6 @@
 	else
 	{
 		UISegmentedControl *clearButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Clear All"]];
-		clearButton.segmentedControlStyle = UISegmentedControlStyleBar;
 		clearButton.momentary = YES;
 		[clearButton addTarget:self
 						action:@selector(clearAllRequest)
@@ -624,7 +623,7 @@
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-	viewController.contentSizeForViewInPopover = CGSizeMake(320.0f, 480.0f);
+	viewController.preferredContentSize = CGSizeMake(320.0f, 480.0f);
 }
 
 #pragma mark -
@@ -917,7 +916,6 @@
 		[segmentedControl setWidth:40.0f
 				 forSegmentAtIndex:kiPhoneNextButtonIndex];
 	}
-	segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
 	segmentedControl.tintColor = [UIColor colorWithRed:0.25f
 												 green:0.25f
 												  blue:0.25f
@@ -1054,7 +1052,7 @@
 
 	DMEncounter* encounter = [DMDataManager currentEncounter];
 	// update view's name
-	self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]", _curRound];
+	self.navigationItem.title = [encounter.name stringByAppendingFormat:@" [%d]", (int)_curRound];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -158,24 +158,6 @@ DMSettings *sSettings = nil;
 								   withAction:@selector(exportToMail:)]
 		atGroupIndex:groupIndex];
 	
-	if( [[UIDevice currentDevice] isMultitaskingSupported] )
-	{
-		groupIndex = [self addGroup:@"Dropbox"];
-		[self addSetting:[SESetting actionSetting:kLinkDropbox
-								  withDetailLabel:nil
-									   withAction:@selector(linkToDropbox:)]
-			atGroupIndex:groupIndex];
-		[self addSetting:[SESetting actionSetting:kImportFromDropbox
-								  withDetailLabel:nil
-									   withAction:@selector(importFromDropbox:)]
-			atGroupIndex:groupIndex];
-		[self addSetting:[SESetting actionSetting:kExportToDropbox
-								  withDetailLabel:nil
-									   withAction:@selector(exportToDropbox:)]
-			atGroupIndex:groupIndex];
-		_dbGroupIndex = groupIndex;
-	}
-	
 	groupIndex = [self addGroup:@"About"];
 	[self addSetting:[SESetting actionSetting:@"Rate DMTools"
 							  withDetailLabel:nil

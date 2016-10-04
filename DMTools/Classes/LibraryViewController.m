@@ -64,13 +64,12 @@
 {
     [super viewDidLoad];
 	
-	self.contentSizeForViewInPopover = CGSizeMake(320.0, 480.0);
+	self.preferredContentSize = CGSizeMake(320.0, 480.0);
 
 	_groupSelector = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:
 																@"Players",
 																@"Monsters",
 																nil]];
-	_groupSelector.segmentedControlStyle = UISegmentedControlStyleBar;
 	[_groupSelector addTarget:self
 					   action:@selector(groupSelected:)
 			 forControlEvents:UIControlEventValueChanged];
@@ -269,7 +268,7 @@
 	do {
 		nameIsUsed = NO;
 		if( instanceIndex )
-			newName = [unit.name stringByAppendingFormat:@" %d", instanceIndex];
+			newName = [unit.name stringByAppendingFormat:@" %d", (unsigned int)instanceIndex];
 		else
 			newName = unit.name;
 		
@@ -373,7 +372,7 @@
 	{
 		// store current selected object before we change mode
 		self.selectedItem = [self selectedObjectIndex];
-		self.selectedGroup = _groupSelector.selectedSegmentIndex;
+		self.selectedGroup = (DMSelectedGroup)_groupSelector.selectedSegmentIndex;
 	}
 	
 	NSArray* items;
@@ -581,7 +580,7 @@
 	{
 		UITabBarItem *initiativeItem = [[self.tabBarController.viewControllers objectAtIndex:1] tabBarItem];
 		const NSInteger badgeValue = [initiativeItem.badgeValue integerValue];
-		initiativeItem.badgeValue = [NSString stringWithFormat:@"%d", badgeValue + 1];
+		initiativeItem.badgeValue = [NSString stringWithFormat:@"%d", (int)badgeValue + 1];
 	}
 	_currentUnit = nil;
 }

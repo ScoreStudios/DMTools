@@ -109,32 +109,32 @@
 - (NSString *) toString
 {
 	if (_modifier >= 0)
-		return [NSString stringWithFormat:@"%d + %d", _value, _modifier];
+		return [NSString stringWithFormat:@"%d + %d", (int)_value, (int)_modifier];
 	else
-		return [NSString stringWithFormat:@"%d - %d", _value, -_modifier];
+		return [NSString stringWithFormat:@"%d - %d", (int)_value, (int)-_modifier];
 }
 
 - (NSString *) toShortString
 {
 	if (_modifier >= 0)
-		return [NSString stringWithFormat:@"%d+%d", _value, _modifier];
+		return [NSString stringWithFormat:@"%d+%d", (int)_value, (int)_modifier];
 	else
-		return [NSString stringWithFormat:@"%d-%d", _value, -_modifier];
+		return [NSString stringWithFormat:@"%d-%d", (int)_value, (int)-_modifier];
 }
 
 - (NSString *) valueToString
 {
-	return [NSString stringWithFormat:@"%d", _value];
+	return [NSString stringWithFormat:@"%d", (int)_value];
 }
 
 - (NSString *) modifierToString
 {
-	return [NSString stringWithFormat:@"%d", _modifier];
+	return [NSString stringWithFormat:@"%d", (int)_modifier];
 }
 
 - (NSString *) totalToString
 {
-	return [NSString stringWithFormat:@"%d", _value + _modifier];
+	return [NSString stringWithFormat:@"%d", (int)(_value + _modifier)];
 }
 
 @end

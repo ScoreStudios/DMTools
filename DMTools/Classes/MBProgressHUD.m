@@ -97,7 +97,7 @@
 	if (![self.labelText isEqualToString:@""]) {
 		
 		// Get size of label text
-		CGSize dims = [self.labelText sizeWithFont:self.labelFont];
+		CGSize dims = [self.labelText sizeWithAttributes:@{NSFontAttributeName:self.labelFont}];
 		
 		// Compute label dimensions based on font metrics
 		// if size is larger than max then clip the label width
@@ -111,7 +111,7 @@
 		// Set label porperties
 		label.font = self.labelFont;
 		label.adjustsFontSizeToFitWidth = NO;
-		label.textAlignment = UITextAlignmentCenter;
+		label.textAlignment = NSTextAlignmentCenter;
 		label.opaque = NO;
 		label.backgroundColor = [UIColor clearColor];
 		label.textColor = [UIColor whiteColor];
@@ -136,7 +136,7 @@
 		if (![self.detailsLabelText isEqualToString:@""]) {
 			
 			// Get size of label text
-			dims = [self.detailsLabelText sizeWithFont:self.detailsLabelFont];
+			dims = [self.detailsLabelText sizeWithAttributes:@{NSFontAttributeName:self.detailsLabelFont}];
 			
 			// Compute label dimensions based on font metrics
 			// if size is larger than max then clip the label width
@@ -149,7 +149,7 @@
 			// Set label properties
 			detailsLabel.font = self.detailsLabelFont;
 			detailsLabel.adjustsFontSizeToFitWidth = NO;
-			detailsLabel.textAlignment = UITextAlignmentCenter;
+			detailsLabel.textAlignment = NSTextAlignmentCenter;
 			detailsLabel.opaque = NO;
 			detailsLabel.backgroundColor = [UIColor clearColor];
 			detailsLabel.textColor = [UIColor whiteColor];

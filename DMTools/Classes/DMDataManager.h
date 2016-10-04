@@ -33,7 +33,6 @@
 + (void) deleteSavedEncounter:(NSString *)name;
 + (DMEncounter*) loadSavedEncounter:(NSString *)name;
 
-+ (NSArray*) defaultLibraryNames;
 + (DMLibrary*) legacyLibrary;
 + (DMEncounter*) currentEncounter;
 + (void) setCurrentEncounter:(DMEncounter*)encounter;

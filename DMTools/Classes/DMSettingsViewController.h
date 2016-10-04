@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "SESettingsViewController.h"
 
-@interface DMSettingsViewController : SESettingsViewController<DBRestClientDelegate, UIAlertViewDelegate> {
+@interface DMSettingsViewController : SESettingsViewController<UIAlertViewDelegate> {
 	NSURL*			_iTunesURL;
-	DBRestClient*	_restClient;
     NSDictionary*	_xmlPaths;	// paths, revisions
     NSArray*		_iconPaths;
     NSString*		_syncHash;
@@ -20,12 +19,8 @@
 	{
 		StatusIdle	= 0,
 		StatusImporting,
-		StatusExporting,
-		StatusDBImporting,
-		StatusDBExporting
+		StatusExporting
 	} _status;
 }
-
-- (void) updateDropboxButtons;
 
 @end

@@ -916,10 +916,7 @@
 		[segmentedControl setWidth:40.0f
 				 forSegmentAtIndex:kiPhoneNextButtonIndex];
 	}
-	segmentedControl.tintColor = [UIColor colorWithRed:0.25f
-												 green:0.25f
-												  blue:0.25f
-												 alpha:1.0f];
+	segmentedControl.tintColor = [UIColor whiteColor];
 	segmentedControl.momentary = YES;
 	[segmentedControl addTarget:self
 						 action:@selector(updateInitiative:)

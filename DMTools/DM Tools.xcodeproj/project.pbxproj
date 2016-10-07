@@ -122,6 +122,7 @@
 		C349E11814FE106400B675FC /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C349E11414FE106400B675FC /* arrow_right@2x.png */; };
 		C3608995154EA4CF005A79C4 /* NSString+XMLConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C3608994154EA4CF005A79C4 /* NSString+XMLConvert.m */; };
 		C37512C314EBD36300EA2A9C /* DMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C37512C214EBD36300EA2A9C /* DMDataManager.m */; };
+		C3826C9E1DA741CC0007A4B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */; };
 		C386AC7D14F1C1C30022234C /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C386AC7C14F1C1C30022234C /* NotesViewController.m */; };
 		C3A4A2B5151B6DF8001D2ABC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A4A2B4151B6DF8001D2ABC /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C3ACB18B124AF9C0006DF6A6 /* DMNumberEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3ACB189124AF9C0006DF6A6 /* DMNumberEditView.xib */; };
@@ -317,6 +318,7 @@
 		C36B7AEF120FA88600C0DA36 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C37512C114EBD36300EA2A9C /* DMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDataManager.h; sourceTree = "<group>"; };
 		C37512C214EBD36300EA2A9C /* DMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDataManager.m; sourceTree = "<group>"; };
+		C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C386AC7B14F1C1C30022234C /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		C386AC7C14F1C1C30022234C /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		C3A4A2B4151B6DF8001D2ABC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -456,6 +458,7 @@
 				C33F896411C67FCD008B18AA /* DMTools-Info.plist */,
 				E46E656411C32A2500B268C4 /* Images */,
 				E46E656311C32A0D00B268C4 /* UI */,
+				C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -879,6 +882,7 @@
 				C349DF1914FBB12600B675FC /* status_dominated.png in Resources */,
 				C349DF1A14FBB12600B675FC /* status_dominated@2x.png in Resources */,
 				C349DF1B14FBB12600B675FC /* status_hitmod.png in Resources */,
+				C3826C9E1DA741CC0007A4B4 /* Launch Screen.storyboard in Resources */,
 				C349DF1C14FBB12600B675FC /* status_hitmod@2x.png in Resources */,
 				C349DF1D14FBB12600B675FC /* status_immobilised.png in Resources */,
 				C349DF1E14FBB12600B675FC /* status_immobilised@2x.png in Resources */,

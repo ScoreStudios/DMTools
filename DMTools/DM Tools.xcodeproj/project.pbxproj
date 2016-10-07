@@ -13,7 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
-		C301DC9E14F1EAE900D5E6CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C317256814F1EA0E0002C732 /* Default.png */; };
 		C30362E712027439005A01D0 /* MainWindowHD.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30362E612027439005A01D0 /* MainWindowHD.xib */; };
 		C30365341202A3BC005A01D0 /* InitiativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30365311202A3BC005A01D0 /* InitiativeViewController.m */; };
 		C30365351202A3BC005A01D0 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30365331202A3BC005A01D0 /* LibraryViewController.m */; };
@@ -22,10 +21,9 @@
 		C30A52CC1537C06D00E92A1C /* menu_encounters_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C30A52CA1537C06D00E92A1C /* menu_encounters_off@2x.png */; };
 		C30A52CF1537CB9400E92A1C /* SessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A52CE1537CB9400E92A1C /* SessionsViewController.m */; };
 		C316EA70132048CF00D8BF8A /* libraries in Resources */ = {isa = PBXBuildFile; fileRef = C316EA6F132048CF00D8BF8A /* libraries */; };
-		C317256714F1E9CD0002C732 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B79C5111BD1ADF0051973D /* Icon.png */; };
-		C317256B14F1EA5B0002C732 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C317256A14F1EA5B0002C732 /* Default@2x.png */; };
 		C323718214E8C18000677E05 /* DMLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C323718114E8C18000677E05 /* DMLibrary.m */; };
 		C326E0501DA33209001B5F55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C326E04F1DA33209001B5F55 /* AVFoundation.framework */; };
+		C326E0A01DA4CE6B001B5F55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C326E09F1DA4CE6B001B5F55 /* Images.xcassets */; };
 		C328308014D8FF1E006F4CD8 /* DMUnitInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C328307F14D8FF1E006F4CD8 /* DMUnitInfoCell.xib */; };
 		C328308414D90127006F4CD8 /* DMUnitInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C328308314D90127006F4CD8 /* DMUnitInfoCell.m */; };
 		C330DCF014EE19F500D25456 /* DMStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C330DCEF14EE19F500D25456 /* DMStatusCell.xib */; };
@@ -122,11 +120,10 @@
 		C349E11614FE106400B675FC /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C349E11214FE106400B675FC /* arrow_left@2x.png */; };
 		C349E11714FE106400B675FC /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C349E11314FE106400B675FC /* arrow_right.png */; };
 		C349E11814FE106400B675FC /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C349E11414FE106400B675FC /* arrow_right@2x.png */; };
-		C34DA35A14F1F3E80010F82E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C34DA34E14F1EB0B0010F82E /* Default-Landscape~ipad.png */; };
 		C3608995154EA4CF005A79C4 /* NSString+XMLConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = C3608994154EA4CF005A79C4 /* NSString+XMLConvert.m */; };
 		C37512C314EBD36300EA2A9C /* DMDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C37512C214EBD36300EA2A9C /* DMDataManager.m */; };
+		C3826C9E1DA741CC0007A4B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */; };
 		C386AC7D14F1C1C30022234C /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C386AC7C14F1C1C30022234C /* NotesViewController.m */; };
-		C3A19B4214F1EAB8006C20DB /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A19B4114F1EAB8006C20DB /* Default-Portrait~ipad.png */; };
 		C3A4A2B5151B6DF8001D2ABC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A4A2B4151B6DF8001D2ABC /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C3ACB18B124AF9C0006DF6A6 /* DMNumberEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3ACB189124AF9C0006DF6A6 /* DMNumberEditView.xib */; };
 		C3ACB268124B1AF9006DF6A6 /* DMNumberEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ACB267124B1AF9006DF6A6 /* DMNumberEditView.m */; };
@@ -138,14 +135,8 @@
 		C3BC131914E4FFA5000798F9 /* DMTextEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BC131814E4FFA5000798F9 /* DMTextEditView.xib */; };
 		C3BC131D14E500C7000798F9 /* DMTextEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BC131C14E500C7000798F9 /* DMTextEditView.m */; };
 		C3C2252414E38D3F000C14E3 /* DMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2252314E38D3F000C14E3 /* DMTableViewCell.m */; };
-		C3E28F541DA236CD00279331 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E28F531DA236CD00279331 /* Default-568h@2x.png */; };
 		C3E3BBEF1348537C004B9888 /* DMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E3BBEE1348537C004B9888 /* DMSettingsViewController.m */; };
 		C3E47CEE12139DC500706F27 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E47CED12139DC500706F27 /* MenuViewController.m */; };
-		C3E483171214D7A900706F27 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E483111214D7A900706F27 /* Icon-72.png */; };
-		C3E483181214D7A900706F27 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E483121214D7A900706F27 /* Icon-Small-50.png */; };
-		C3E483191214D7A900706F27 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E483131214D7A900706F27 /* Icon-Small.png */; };
-		C3E4831A1214D7A900706F27 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E483141214D7A900706F27 /* Icon-Small@2x.png */; };
-		C3E4831B1214D7A900706F27 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E483151214D7A900706F27 /* Icon@2x.png */; };
 		C3EDB9A0120A6EF100FC97F2 /* UIDevice+IdiomDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EDB99F120A6EF100FC97F2 /* UIDevice+IdiomDetection.m */; };
 		C3F806F41943D42300F78A43 /* SENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DE1BCD155D1F2500D2F6C8 /* SENavigationController.m */; };
 		C3F806F51943D43800F78A43 /* SEModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE64C315200A6200AAEFBD /* SEModalView.m */; };
@@ -206,12 +197,11 @@
 		C30A52CD1537CB9400E92A1C /* SessionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsViewController.h; sourceTree = "<group>"; };
 		C30A52CE1537CB9400E92A1C /* SessionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsViewController.m; sourceTree = "<group>"; };
 		C316EA6F132048CF00D8BF8A /* libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libraries; sourceTree = "<group>"; };
-		C317256814F1EA0E0002C732 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C317256A14F1EA5B0002C732 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C323718014E8C18000677E05 /* DMLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLibrary.h; sourceTree = "<group>"; };
 		C323718114E8C18000677E05 /* DMLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLibrary.m; sourceTree = "<group>"; };
 		C32371A714E909E100677E05 /* DM Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DM Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C326E04F1DA33209001B5F55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C326E09F1DA4CE6B001B5F55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "DM Tools/Images.xcassets"; sourceTree = "<group>"; };
 		C328307F14D8FF1E006F4CD8 /* DMUnitInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMUnitInfoCell.xib; sourceTree = "<group>"; };
 		C328308214D90127006F4CD8 /* DMUnitInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUnitInfoCell.h; sourceTree = "<group>"; };
 		C328308314D90127006F4CD8 /* DMUnitInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUnitInfoCell.m; sourceTree = "<group>"; };
@@ -316,7 +306,6 @@
 		C349E11214FE106400B675FC /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_left@2x.png"; path = "images/arrow_left@2x.png"; sourceTree = "<group>"; };
 		C349E11314FE106400B675FC /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right.png; path = images/arrow_right.png; sourceTree = "<group>"; };
 		C349E11414FE106400B675FC /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_right@2x.png"; path = "images/arrow_right@2x.png"; sourceTree = "<group>"; };
-		C34DA34E14F1EB0B0010F82E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		C3504AB21553FE180054FCDD /* SECollatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECollatedViewController.h; sourceTree = "<group>"; };
 		C3504AB31553FE180054FCDD /* SECollatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECollatedViewController.m; sourceTree = "<group>"; };
 		C3504AB5155405200054FCDD /* SECollatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECollatedObject.h; sourceTree = "<group>"; };
@@ -329,9 +318,9 @@
 		C36B7AEF120FA88600C0DA36 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C37512C114EBD36300EA2A9C /* DMDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDataManager.h; sourceTree = "<group>"; };
 		C37512C214EBD36300EA2A9C /* DMDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDataManager.m; sourceTree = "<group>"; };
+		C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C386AC7B14F1C1C30022234C /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		C386AC7C14F1C1C30022234C /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
-		C3A19B4114F1EAB8006C20DB /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		C3A4A2B4151B6DF8001D2ABC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C3A9CEF3121B3293000F1309 /* SEWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEWebViewController.h; sourceTree = "<group>"; };
 		C3A9CEF4121B3293000F1309 /* SEWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEWebViewController.m; sourceTree = "<group>"; };
@@ -364,18 +353,12 @@
 		C3DE1BCC155D1F2500D2F6C8 /* SENavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SENavigationController.h; sourceTree = "<group>"; };
 		C3DE1BCD155D1F2500D2F6C8 /* SENavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SENavigationController.m; sourceTree = "<group>"; };
 		C3DE1BCF155D346900D2F6C8 /* SEPushPopViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPushPopViewControllerProtocol.h; sourceTree = "<group>"; };
-		C3E28F531DA236CD00279331 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C3E3BBE51346946F004B9888 /* SESettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESettingsViewController.h; sourceTree = "<group>"; };
 		C3E3BBE61346946F004B9888 /* SESettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESettingsViewController.m; sourceTree = "<group>"; };
 		C3E3BBED1348537C004B9888 /* DMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSettingsViewController.h; sourceTree = "<group>"; };
 		C3E3BBEE1348537C004B9888 /* DMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSettingsViewController.m; sourceTree = "<group>"; };
 		C3E47CEC12139DC500706F27 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		C3E47CED12139DC500706F27 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		C3E483111214D7A900706F27 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		C3E483121214D7A900706F27 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		C3E483131214D7A900706F27 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		C3E483141214D7A900706F27 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		C3E483151214D7A900706F27 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		C3EDB99E120A6EF100FC97F2 /* UIDevice+IdiomDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdiomDetection.h"; sourceTree = "<group>"; };
 		C3EDB99F120A6EF100FC97F2 /* UIDevice+IdiomDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdiomDetection.m"; sourceTree = "<group>"; };
 		C3EE330514EB4ECF00662AE7 /* NSMutableString+DMToolsExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+DMToolsExport.h"; sourceTree = "<group>"; };
@@ -406,7 +389,6 @@
 		E46EAA5511C15415008D2BD5 /* DamageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = DamageViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E46EAA5611C15415008D2BD5 /* DamageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 2; path = DamageViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		E46EAA5711C15415008D2BD5 /* DamageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DamageViewController.xib; sourceTree = "<group>"; };
-		E4B79C5111BD1ADF0051973D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		E4B79C5511BD1AF50051973D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		E4DDC20B11E46C53004B9279 /* SEAutoInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAutoInputViewController.h; sourceTree = "<group>"; };
 		E4DDC20C11E46C53004B9279 /* SEAutoInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAutoInputViewController.m; sourceTree = "<group>"; };
@@ -470,11 +452,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C326E09F1DA4CE6B001B5F55 /* Images.xcassets */,
 				C316EA6F132048CF00D8BF8A /* libraries */,
 				C3086DD8130F711200F5872F /* ScoreEntitlement.plist */,
 				C33F896411C67FCD008B18AA /* DMTools-Info.plist */,
 				E46E656411C32A2500B268C4 /* Images */,
 				E46E656311C32A0D00B268C4 /* UI */,
+				C3826C9D1DA741CC0007A4B4 /* Launch Screen.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -806,17 +790,6 @@
 				C349DF5414FBB18B00B675FC /* menu */,
 				C349DF7D14FBB1BE00B675FC /* other */,
 				C323718514E8FED900677E05 /* status */,
-				C317256814F1EA0E0002C732 /* Default.png */,
-				C317256A14F1EA5B0002C732 /* Default@2x.png */,
-				C3A19B4114F1EAB8006C20DB /* Default-Portrait~ipad.png */,
-				C3E28F531DA236CD00279331 /* Default-568h@2x.png */,
-				C34DA34E14F1EB0B0010F82E /* Default-Landscape~ipad.png */,
-				C3E483131214D7A900706F27 /* Icon-Small.png */,
-				C3E483121214D7A900706F27 /* Icon-Small-50.png */,
-				C3E483141214D7A900706F27 /* Icon-Small@2x.png */,
-				E4B79C5111BD1ADF0051973D /* Icon.png */,
-				C3E483111214D7A900706F27 /* Icon-72.png */,
-				C3E483151214D7A900706F27 /* Icon@2x.png */,
 				E4B79C5511BD1AF50051973D /* iTunesArtwork.png */,
 			);
 			name = Images;
@@ -878,31 +851,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				C30362E712027439005A01D0 /* MainWindowHD.xib in Resources */,
 				E44C6D8C11BA508000C6AEE3 /* NoteViewController.xib in Resources */,
 				E46EAA5911C15415008D2BD5 /* DamageViewController.xib in Resources */,
-				C30362E712027439005A01D0 /* MainWindowHD.xib in Resources */,
-				C3E483171214D7A900706F27 /* Icon-72.png in Resources */,
-				C3E483181214D7A900706F27 /* Icon-Small-50.png in Resources */,
-				C3E483191214D7A900706F27 /* Icon-Small.png in Resources */,
-				C3E4831A1214D7A900706F27 /* Icon-Small@2x.png in Resources */,
-				C3E4831B1214D7A900706F27 /* Icon@2x.png in Resources */,
 				C33145EC12272368000C5B5F /* EncounterViewController.xib in Resources */,
 				C346EBC9123301EA00F12AA3 /* DiceViewController.xib in Resources */,
+				C3F807031943D49B00F78A43 /* SEWebViewController.xib in Resources */,
 				C3ACB18B124AF9C0006DF6A6 /* DMNumberEditView.xib in Resources */,
-				C316EA70132048CF00D8BF8A /* libraries in Resources */,
-				C3FB536B133738BF0061903F /* DMUnitCell.xib in Resources */,
-				C3FB536D133738E70061903F /* DMUnitCellHD.xib in Resources */,
 				C3FB5385133979410061903F /* DMNumberEditViewEx.xib in Resources */,
-				C328308014D8FF1E006F4CD8 /* DMUnitInfoCell.xib in Resources */,
 				C3FB96FB14E3FF260063B49B /* DMPickerEditView.xib in Resources */,
 				C3BC131914E4FFA5000798F9 /* DMTextEditView.xib in Resources */,
+				C3FB536B133738BF0061903F /* DMUnitCell.xib in Resources */,
+				C3FB536D133738E70061903F /* DMUnitCellHD.xib in Resources */,
+				C328308014D8FF1E006F4CD8 /* DMUnitInfoCell.xib in Resources */,
 				C330DCF014EE19F500D25456 /* DMStatusCell.xib in Resources */,
 				C3B9060F14EF80FD00BFAD80 /* DMAvatarCell.xib in Resources */,
-				C317256714F1E9CD0002C732 /* Icon.png in Resources */,
-				C317256B14F1EA5B0002C732 /* Default@2x.png in Resources */,
-				C3A19B4214F1EAB8006C20DB /* Default-Portrait~ipad.png in Resources */,
-				C301DC9E14F1EAE900D5E6CC /* Default.png in Resources */,
-				C34DA35A14F1F3E80010F82E /* Default-Landscape~ipad.png in Resources */,
+				C326E0A01DA4CE6B001B5F55 /* Images.xcassets in Resources */,
+				C316EA70132048CF00D8BF8A /* libraries in Resources */,
+				C349DF3A14FBB14400B675FC /* avatars in Resources */,
 				C349DF0F14FBB12600B675FC /* status_acmod.png in Resources */,
 				C349DF1014FBB12600B675FC /* status_acmod@2x.png in Resources */,
 				C349DF1114FBB12600B675FC /* status_blinded.png in Resources */,
@@ -916,13 +882,13 @@
 				C349DF1914FBB12600B675FC /* status_dominated.png in Resources */,
 				C349DF1A14FBB12600B675FC /* status_dominated@2x.png in Resources */,
 				C349DF1B14FBB12600B675FC /* status_hitmod.png in Resources */,
+				C3826C9E1DA741CC0007A4B4 /* Launch Screen.storyboard in Resources */,
 				C349DF1C14FBB12600B675FC /* status_hitmod@2x.png in Resources */,
 				C349DF1D14FBB12600B675FC /* status_immobilised.png in Resources */,
 				C349DF1E14FBB12600B675FC /* status_immobilised@2x.png in Resources */,
 				C349DF1F14FBB12600B675FC /* status_marked.png in Resources */,
 				C349DF2014FBB12600B675FC /* status_marked@2x.png in Resources */,
 				C349DF2114FBB12600B675FC /* status_ongoing.png in Resources */,
-				C3F807031943D49B00F78A43 /* SEWebViewController.xib in Resources */,
 				C349DF2214FBB12600B675FC /* status_ongoing@2x.png in Resources */,
 				C349DF2314FBB12600B675FC /* status_poisoned.png in Resources */,
 				C349DF2414FBB12600B675FC /* status_poisoned@2x.png in Resources */,
@@ -940,14 +906,12 @@
 				C349DF3014FBB12600B675FC /* status_randhead@2x.png in Resources */,
 				C349DF3114FBB12600B675FC /* status_randskull.png in Resources */,
 				C349DF3214FBB12600B675FC /* status_randskull@2x.png in Resources */,
-				C3E28F541DA236CD00279331 /* Default-568h@2x.png in Resources */,
 				C349DF3314FBB12600B675FC /* status_slowed.png in Resources */,
 				C349DF3414FBB12600B675FC /* status_slowed@2x.png in Resources */,
 				C349DF3514FBB12600B675FC /* status_stunned.png in Resources */,
 				C349DF3614FBB12600B675FC /* status_stunned@2x.png in Resources */,
 				C349DF3714FBB12600B675FC /* status_weakened.png in Resources */,
 				C349DF3814FBB12600B675FC /* status_weakened@2x.png in Resources */,
-				C349DF3A14FBB14400B675FC /* avatars in Resources */,
 				C349DF4814FBB17400B675FC /* d4.png in Resources */,
 				C349DF4914FBB17400B675FC /* d4@2x.png in Resources */,
 				C349DF4A14FBB17400B675FC /* d6.png in Resources */,
@@ -1062,26 +1026,28 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BCQNH4223D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;
 				INFOPLIST_FILE = "DMTools-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScoreStudios.DMTools;
 				PRODUCT_NAME = "DM Tools";
-				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BCQNH4223D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;
 				INFOPLIST_FILE = "DMTools-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScoreStudios.DMTools;
 				PRODUCT_NAME = "DM Tools";
-				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1089,7 +1055,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1103,7 +1068,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1132,7 +1096,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1143,8 +1106,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				GCC_THUMB_SUPPORT = NO;
@@ -1159,6 +1122,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1167,7 +1131,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1180,7 +1143,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
@@ -1207,13 +1169,14 @@
 		C305BF14151ACFE6003F28BC /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BCQNH4223D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DMTools_Prefix.pch;
 				INFOPLIST_FILE = "DMTools-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ScoreStudios.DMTools;
 				PRODUCT_NAME = "DM Tools";
-				STRIP_INSTALLED_PRODUCT = YES;
 			};
 			name = Profile;
 		};

@@ -26,8 +26,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="109">
-                    <frame key="frameInset" minX="8.07%" minY="6" width="72" height="37"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="109">
+                    <frame key="frameInset" minX="8.07%" minY="64" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" title="Damage" backgroundImage="numc.png">
@@ -42,8 +42,8 @@
                         <action selector="damageButton:" destination="-1" eventType="touchUpInside" id="121"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0000" borderStyle="bezel" textAlignment="center" minimumFontSize="17" id="54" userLabel="damage Text Field (0000)" customClass="SENoEditTextField">
-                    <frame key="frameInset" minX="50.00%" width="120" height="47"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0000" borderStyle="bezel" textAlignment="center" minimumFontSize="17" id="54" userLabel="damage Text Field (0000)" customClass="SENoEditTextField">
+                    <frame key="frameInset" minX="50.00%" minY="58" width="120" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -51,8 +51,8 @@
                         <outlet property="delegate" destination="-1" id="163"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="110">
-                    <frame key="frameInset" minX="91.94%" minY="6" width="72" height="37"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="110">
+                    <frame key="frameInset" minX="91.94%" minY="64" width="72" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" title="Heal" backgroundImage="num.png">
@@ -67,36 +67,36 @@
                         <action selector="healButton:" destination="-1" eventType="touchUpInside" id="122"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="173" userLabel="Label 0">
-                    <frame key="frameInset" minX="11" minY="60" width="24" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="173" userLabel="Label 0">
+                    <frame key="frameInset" minX="11" minY="118" width="24" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="175" userLabel="Label 1">
-                    <frame key="frameInset" minX="93" minY="60" width="24" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="175" userLabel="Label 1">
+                    <frame key="frameInset" minX="93" minY="118" width="24" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="178" userLabel="Label 2">
-                    <frame key="frameInset" minX="172" minY="60" width="24" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="178" userLabel="Label 2">
+                    <frame key="frameInset" minX="172" minY="118" width="24" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="180" userLabel="Label 3">
-                    <frame key="frameInset" minX="251" minY="60" width="24" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="lbl" lineBreakMode="tailTruncation" minimumFontSize="10" id="180" userLabel="Label 3">
+                    <frame key="frameInset" minX="251" minY="118" width="24" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="124" userLabel="Text Field 0">
-                    <frame key="frameInset" minX="13.89%" minY="55" width="32" height="31"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="124" userLabel="Text Field 0">
+                    <frame key="frameInset" minX="13.89%" minY="113" width="32" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -104,8 +104,8 @@
                         <outlet property="delegate" destination="-1" id="165"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="174" userLabel="Text Field 1">
-                    <frame key="frameInset" minX="42.36%" minY="55" width="32" height="31"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="174" userLabel="Text Field 1">
+                    <frame key="frameInset" minX="42.36%" minY="113" width="32" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -113,8 +113,8 @@
                         <outlet property="delegate" destination="-1" id="176"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="177" userLabel="Text Field 2">
-                    <frame key="frameInset" minX="69.79%" minY="55" width="32" height="31"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="177" userLabel="Text Field 2">
+                    <frame key="frameInset" minX="69.79%" minY="113" width="32" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -122,8 +122,8 @@
                         <outlet property="delegate" destination="-1" id="181"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="179" userLabel="Text Field 3">
-                    <frame key="frameInset" minX="97.22%" minY="55" width="32" height="31"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="179" userLabel="Text Field 3">
+                    <frame key="frameInset" minX="97.22%" minY="113" width="32" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -131,8 +131,8 @@
                         <outlet property="delegate" destination="-1" id="182"/>
                     </connections>
                 </textField>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" id="169" customClass="SEAutoFocusTableView">
-                    <frame key="frameInset" minY="94"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" id="169" customClass="SEAutoFocusTableView">
+                    <frame key="frameInset" minY="160"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
@@ -142,8 +142,8 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>

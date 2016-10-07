@@ -20,8 +20,8 @@
 
 - (void) dealloc
 {
-	[super dealloc];
 	[_control release];
+	[super dealloc];
 }
 @end
 

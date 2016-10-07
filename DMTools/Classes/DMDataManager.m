@@ -180,6 +180,7 @@ static NSMutableDictionary* sAvatars = nil;
 - (void) dealloc
 {
 	[_libraries release];
+	[_encounters release];
 	[_encounterDates release];
 	[_filepath release];
 	[_filename release];
